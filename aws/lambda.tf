@@ -40,10 +40,7 @@ resource "aws_lambda_function" "analysis_lambda" {
   runtime = "nodejs12.x"
 
   environment {
-    variables = {
-      access_key = "AKIAIOSFODNN7EXAMPLE"
-      secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-    }
+
   }
   tags = {
     git_commit           = "5c6b5d60a8aa63a5d37e60f15185d13a967f0542"
